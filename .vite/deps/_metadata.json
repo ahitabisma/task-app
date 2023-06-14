@@ -1,0 +1,13 @@
+{
+  "hash": "f9245089",
+  "browserHash": "1e38c9ad",
+  "optimized": {
+    "flowbite": {
+      "src": "../../node_modules/flowbite/lib/esm/index.js",
+      "file": "flowbite.js",
+      "fileHash": "b3499f15",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}
