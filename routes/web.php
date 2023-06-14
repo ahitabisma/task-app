@@ -14,6 +14,8 @@ use App\Http\Controllers\TasksController;
 |
 */
 
+Route::redirect('/', '/tasks');
+
 Route::prefix('tasks')->group(function () {
     // Create task
     Route::get('/', [TasksController::class, 'index'])->name('tasks.index');
@@ -24,7 +26,7 @@ Route::prefix('tasks')->group(function () {
     Route::put('{tasks:id}', [TasksController::class, 'update'])->name('tasks.update');
 
     // Change Status
-    Route::put('{tasks:id}/status', [TasksController::class,'updateStatus'])->name('tasks.updateStatus');
+    Route::put('{tasks:id}/status', [TasksController::class, 'updateStatus'])->name('tasks.updateStatus');
 
     // Delete task
     Route::delete('{tasks:id}', [TasksController::class, 'destroy'])->name('tasks.destroy');
